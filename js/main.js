@@ -1,7 +1,7 @@
 const app = new Vue ({
     el: '#app',
     data : {
-        todos = [
+        todos : [
             {
                 text: 'terminare Web App',
                 completed: false,
