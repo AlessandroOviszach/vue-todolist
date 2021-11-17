@@ -28,5 +28,11 @@ const app = new Vue ({
                 completed: true,
             },
         ]
+    },
+    methods : {
+        RemoveTodo(index) {
+            this.todos.splice(index, 1);
+        },
+    
     }
 }); 
