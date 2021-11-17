@@ -16,6 +16,11 @@
 <body>
     <section id="app" class="container">
         <h1>lista todo</h1>
+        <sectiom class="new-todo">
+            <input type="text" placeholder="nuovo todo" v-model.trim="newTodo" @keyup.enter="addTodo">
+
+            <button class="button" @click="addTodo">Aggiungi</button>
+        </sectiom>
 
         <div>
             <ul>

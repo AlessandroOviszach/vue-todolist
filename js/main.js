@@ -27,11 +27,22 @@ const app = new Vue ({
                 text: 'fare il bucato',
                 completed: true,
             },
-        ]
+        ],
+        newTodo: '',
     },
     methods : {
         RemoveTodo(index) {
             this.todos.splice(index, 1);
+        },
+
+        addTodo() {
+            if (this.newTodo !== '') {
+                this.todos.unshift({
+                    text: this.newTodo,
+                    completed: false,});
+                
+                this.newTodo = '';
+            }
         },
     
     }
